@@ -15,6 +15,7 @@ const activity = cwd.includes('01-Activities') ?
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
+console.log('change')
 
 db.once('open', () => {
     app.listen(PORT, () => {
